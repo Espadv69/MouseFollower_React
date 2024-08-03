@@ -28,6 +28,14 @@ export const FollowMouse = () => {
         console.log('cleanup')
       }
     }, [enabled]) // El efecto depende del estado 'enabled'
+
+    useEffect(() => {
+      document.body.classList.toggle('no-cursor', enabled)
+
+      return(() => {
+        document.body.classList.remove('no-cursor')
+      })
+    }, [enabled])
   
     return (
       <>
