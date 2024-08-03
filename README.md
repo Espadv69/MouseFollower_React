@@ -118,6 +118,3 @@ npm install react react-dom
 3. Replace the `App` component in `App.js` with the provided `App` code.
 4. Start your React application with `npm start` or `yarn start`.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
