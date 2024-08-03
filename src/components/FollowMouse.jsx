@@ -25,6 +25,7 @@ export const FollowMouse = () => {
       // Limpieza: remover el event listener cuando el seguimiento se deshabilite
       return () => {
         window.removeEventListener('pointermove', handleMove)
+        console.log('cleanup')
       }
     }, [enabled]) // El efecto depende del estado 'enabled'
   
